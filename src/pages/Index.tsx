@@ -1,7 +1,7 @@
 
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { ChevronDown, Download, Play, Github, ExternalLink, Mail, Phone, Linkedin, Code } from "lucide-react";
+import { ChevronDown, Download, Play, Github, ExternalLink, Mail, Phone, Linkedin, Code, ArrowRight, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -96,55 +96,198 @@ const Portfolio = () => {
         </div>
       </nav>
 
-      {/* Hero Section */}
+      {/* Enhanced Hero Section */}
       <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 via-blue-600/20 to-purple-600/20"></div>
-        <div className="absolute inset-0 bg-black/40"></div>
+        {/* Animated Background Elements */}
+        <div className="absolute inset-0">
+          <div className="absolute inset-0 bg-gradient-to-br from-indigo-900/30 via-purple-900/30 to-pink-900/30"></div>
+          <div className="absolute inset-0 bg-gradient-to-tr from-cyan-500/10 via-blue-600/10 to-purple-600/10"></div>
+          
+          {/* Floating Geometric Shapes */}
+          <motion.div
+            animate={{ 
+              y: [0, -20, 0],
+              rotate: [0, 180, 360]
+            }}
+            transition={{ 
+              duration: 8,
+              repeat: Infinity,
+              ease: "linear"
+            }}
+            className="absolute top-20 left-10 w-16 h-16 border border-cyan-400/30 rounded-lg"
+          />
+          
+          <motion.div
+            animate={{ 
+              y: [0, 20, 0],
+              rotate: [360, 180, 0]
+            }}
+            transition={{ 
+              duration: 10,
+              repeat: Infinity,
+              ease: "linear"
+            }}
+            className="absolute top-40 right-20 w-12 h-12 bg-gradient-to-r from-pink-500/20 to-purple-500/20 rounded-full"
+          />
+          
+          <motion.div
+            animate={{ 
+              scale: [1, 1.2, 1],
+              opacity: [0.5, 0.8, 0.5]
+            }}
+            transition={{ 
+              duration: 6,
+              repeat: Infinity,
+              ease: "easeInOut"
+            }}
+            className="absolute bottom-40 left-20 w-8 h-8 bg-cyan-400/20 rounded-full"
+          />
+        </div>
+        
+        <div className="absolute inset-0 bg-black/60"></div>
         
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="space-y-6"
+            transition={{ duration: 1, ease: "easeOut" }}
+            className="space-y-8"
           >
-            <div className="inline-flex items-center space-x-2 bg-green-500/20 border border-green-500/30 rounded-full px-4 py-2 text-green-400 text-sm">
-              <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
-              <span>Hi I'm Anurag Gupta</span>
+            {/* Status Badge */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="inline-flex items-center space-x-2 bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-full px-6 py-3 backdrop-blur-sm"
+            >
+              <motion.span 
+                animate={{ scale: [1, 1.2, 1] }}
+                transition={{ duration: 2, repeat: Infinity }}
+                className="w-2 h-2 bg-green-400 rounded-full"
+              />
+              <span className="text-green-400 font-medium">Available for new opportunities</span>
+              <Sparkles className="w-4 h-4 text-green-400" />
+            </motion.div>
+            
+            {/* Main Heading */}
+            <div className="space-y-4">
+              <motion.h1 
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                className="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight"
+              >
+                <span className="text-white block mb-2">Hi, I'm</span>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 block">
+                  Anurag Gupta
+                </span>
+              </motion.h1>
+              
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+                className="space-y-2"
+              >
+                <h2 className="text-2xl md:text-4xl lg:text-5xl font-light text-gray-300">
+                  Full-Stack Developer
+                </h2>
+                <div className="flex items-center justify-center space-x-2 text-lg md:text-xl text-gray-400">
+                  <span>&</span>
+                  <span className="italic font-light">Problem Solver</span>
+                </div>
+              </motion.div>
             </div>
             
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
-              A <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">FULL-STACK DEVELOPER</span>
-              <br />
-              <span className="text-2xl md:text-3xl lg:text-4xl font-light italic text-gray-300">
-                & PROBLEM SOLVER
-              </span>
-            </h1>
+            {/* Description */}
+            <motion.p 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.8 }}
+              className="text-lg md:text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed"
+            >
+              Transforming innovative ideas into <span className="text-cyan-400 font-medium">functional</span> and 
+              <span className="text-purple-400 font-medium"> beautiful</span> digital solutions. 
+              Passionate about building scalable, impactful technology with <span className="text-green-400 font-medium">10+ years</span> of 
+              dedication to learning and growth.
+            </motion.p>
             
-            <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              Turning Ideas into Functional and Beautiful Digital Solutions. 
-              Passionate about building scalable, impactful technology with 10+ years of dedication to learning and growth.
-            </p>
+            {/* CTA Buttons */}
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 1 }}
+              className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-12"
+            >
+              <Button 
+                size="lg"
+                className="group bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-black font-semibold px-8 py-4 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-green-500/25"
+              >
+                <Download className="w-5 h-5 mr-2 group-hover:animate-bounce" />
+                Download CV
+                <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
+              </Button>
+              
+              <Button 
+                variant="outline" 
+                size="lg"
+                className="group border-2 border-gray-600 text-white hover:bg-white hover:text-black px-8 py-4 rounded-xl transition-all duration-300 transform hover:scale-105 backdrop-blur-sm"
+              >
+                <Play className="w-5 h-5 mr-2" />
+                Watch Demo
+                <motion.div
+                  animate={{ x: [0, 5, 0] }}
+                  transition={{ duration: 1.5, repeat: Infinity }}
+                  className="ml-2"
+                >
+                  ▶
+                </motion.div>
+              </Button>
+            </motion.div>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8">
-              <Button className="bg-green-500 hover:bg-green-600 text-black font-semibold px-6 py-3 rounded-lg flex items-center space-x-2">
-                <Download className="w-4 h-4" />
-                <span>DOWNLOAD CV</span>
-              </Button>
-              <Button variant="outline" className="border-gray-600 text-white hover:bg-gray-800 px-6 py-3 rounded-lg flex items-center space-x-2">
-                <Play className="w-4 h-4" />
-                <span>PLAY VIDEO</span>
-              </Button>
-            </div>
+            {/* Social Links */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 1.2 }}
+              className="flex justify-center space-x-6 mt-8"
+            >
+              {[
+                { icon: Github, href: "#", label: "GitHub" },
+                { icon: Linkedin, href: "#", label: "LinkedIn" },
+                { icon: Mail, href: "#", label: "Email" },
+                { icon: Code, href: "#", label: "LeetCode" }
+              ].map(({ icon: Icon, href, label }, index) => (
+                <motion.a
+                  key={label}
+                  href={href}
+                  whileHover={{ scale: 1.2, y: -2 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="p-3 rounded-full bg-gray-800/50 backdrop-blur-sm border border-gray-700 hover:border-cyan-400 transition-all duration-300 group"
+                  title={label}
+                >
+                  <Icon className="w-5 h-5 text-gray-400 group-hover:text-cyan-400 transition-colors" />
+                </motion.a>
+              ))}
+            </motion.div>
           </motion.div>
         </div>
         
+        {/* Scroll Indicator */}
         <motion.div
-          animate={{ y: [0, 10, 0] }}
-          transition={{ duration: 2, repeat: Infinity }}
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1.5 }}
+          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center space-y-2"
         >
-          <ChevronDown className="w-6 h-6 text-white" />
+          <span className="text-gray-400 text-sm">Scroll to explore</span>
+          <motion.div
+            animate={{ y: [0, 8, 0] }}
+            transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+            className="p-2 rounded-full border border-gray-600"
+          >
+            <ChevronDown className="w-5 h-5 text-gray-400" />
+          </motion.div>
         </motion.div>
       </section>
 
