@@ -174,7 +174,7 @@ const Portfolio = () => {
                   className="relative w-72 h-72 rounded-full overflow-hidden border-4 border-white/20 shadow-2xl"
                 >
                   <img
-                    src="https://i.ibb.co/whFD1Nz/q.jpg"
+                    src="https://postimage.me/image/ANURAG-GUPTA-B.TECH%28CSE%29-14.UdeIoQ"
                     alt="Anurag Gupta"
                     className="w-full h-full object-cover"
                   />
