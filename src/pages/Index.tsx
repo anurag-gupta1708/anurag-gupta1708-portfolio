@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { ChevronDown, Download, Play, Github, ExternalLink, Mail, Phone, Linkedin, Code, ArrowRight, Sparkles } from "lucide-react";
@@ -9,6 +8,7 @@ import { Separator } from "@/components/ui/separator";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
+import ContactForm from "@/components/ContactForm";
 
 const Portfolio = () => {
   const [darkMode, setDarkMode] = useState(true);
@@ -627,7 +627,7 @@ const Portfolio = () => {
         </div>
       </section>
 
-      {/* Contact Section */}
+      {/* Contact Section with new form */}
       <section id="contact" className="py-20 bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -697,38 +697,7 @@ const Portfolio = () => {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <Card className="bg-gray-800 border-gray-700">
-                <CardHeader>
-                  <CardTitle className="text-white">Send a Message</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <form onSubmit={handleContactSubmit} className="space-y-4">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                      <Input 
-                        placeholder="Your Name" 
-                        className="bg-gray-700 border-gray-600 text-white placeholder-gray-400"
-                      />
-                      <Input 
-                        type="email" 
-                        placeholder="Your Email" 
-                        className="bg-gray-700 border-gray-600 text-white placeholder-gray-400"
-                      />
-                    </div>
-                    <Input 
-                      placeholder="Subject" 
-                      className="bg-gray-700 border-gray-600 text-white placeholder-gray-400"
-                    />
-                    <Textarea 
-                      placeholder="Your Message" 
-                      rows={4}
-                      className="bg-gray-700 border-gray-600 text-white placeholder-gray-400"
-                    />
-                    <Button type="submit" className="w-full bg-cyan-500 hover:bg-cyan-600">
-                      Send Message
-                    </Button>
-                  </form>
-                </CardContent>
-              </Card>
+              <ContactForm />
             </motion.div>
           </div>
         </div>
