@@ -16,7 +16,7 @@ export interface ContactFormData {
   message: string;
 }
 
-export const sendContactEmail = async (formData: ContactFormData): Promise<void> => {
+export const sendContactEmail = async (formData: ContactFormData): Promise<any> => {
   try {
     console.log('Sending email with data:', formData);
     
