@@ -217,7 +217,7 @@ const HeroSection = () => {
               className="flex justify-center lg:justify-start space-x-6 mt-8"
             >
               {[
-                { icon: Github, href: "#", label: "GitHub" },
+                { icon: Github, href: "https://github.com/anurag-gupta1708", label: "GitHub" },
                 { icon: Linkedin, href: "#", label: "LinkedIn" },
                 { icon: Mail, href: "#", label: "Email" },
                 { icon: Code, href: "#", label: "LeetCode" }
