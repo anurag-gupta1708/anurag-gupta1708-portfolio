@@ -184,6 +184,7 @@ const HeroSection = () => {
               className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center mt-8"
             >
               <Button 
+                ref="/ANURAG GUPTA_RESUME With Photo.pdf"
                 size="lg"
                 className="group bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-black font-semibold px-8 py-4 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-green-500/25"
               >
@@ -193,6 +194,7 @@ const HeroSection = () => {
               </Button>
               
               <Button 
+            
                 variant="outline" 
                 size="lg"
                 className="group border-2 border-gray-600 text-white hover:bg-white hover:text-black px-8 py-4 rounded-xl transition-all duration-300 transform hover:scale-105 backdrop-blur-sm"
@@ -218,9 +220,9 @@ const HeroSection = () => {
             >
               {[
                 { icon: Github, href: "https://github.com/anurag-gupta1708", label: "GitHub" },
-                { icon: Linkedin, href: "#", label: "LinkedIn" },
-                { icon: Mail, href: "#", label: "Email" },
-                { icon: Code, href: "#", label: "LeetCode" }
+                { icon: Linkedin, href: "https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile", label: "LinkedIn" },
+                { icon: Mail, href: "mailto:akg2571977@gmail.com", label: "Email" },
+                { icon: Code, href: "https://leetcode.com/u/a_2005/", label: "LeetCode" }
               ].map(({ icon: Icon, href, label }, index) => (
                 <motion.a
                   key={label}
