@@ -226,13 +226,15 @@ const HeroSection = () => {
             >
               {[
                 { icon: Github,  href: "https://github.com/anurag-gupta1708", label: "GitHub" },
-                { icon: Linkedin, href: "https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile", label: "LinkedIn" },
+                { icon: Linkedin, href: "https://linkedin.com/in/anurag-gupta-378819274", label: "LinkedIn" },
                 { icon: Mail, href: "mailto:akg2571977@gmail.com", label: "Email" },
                 { icon: Code, href: "https://leetcode.com/u/a_2005/", label: "LeetCode" }
               ].map(({ icon: Icon, href, label }, index) => (
                 <motion.a
                   key={label}
                   href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   whileHover={{ scale: 1.2, y: -2 }}
                   whileTap={{ scale: 0.95 }}
                   className="p-3 rounded-full bg-gray-800/50 backdrop-blur-sm border border-gray-700 hover:border-cyan-400 transition-all duration-300 group"
