@@ -80,11 +80,11 @@ const HeroSection = () => {
                 initial={{ scale: 0.8, opacity: 0}}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 1, delay: 0.3 }}
-                className="relative w-80 h-75 rounded-full overflow-hidden border-4 border-white/25 shadow-2xl"
+                className="relative w-80 h-80 rounded-full overflow-hidden border-4 border-white/25 shadow-2xl"
               >
                 <img
-                  src="public/_DSF8625 (1).jpg"
-                  alt=""
+                  src="/lovable-uploads/2fe69ebc-bcd3-4c0d-acc6-5ce738339a18.png"
+                  alt="Anurag Gupta"
                   className="w-full h-full object-cover"
                 />
                 
