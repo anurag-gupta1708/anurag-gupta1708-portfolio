@@ -26,12 +26,15 @@ const AboutSection = () => {
             className="space-y-6"
           >
             <p className="text-gray-300 text-lg leading-relaxed">
-              Aspiring software developer with solid background knowledge in user-centered design and full-stack web development. 
-              Knowledgeable about converting concepts into workable digital solutions and developing responsive, user-friendly interfaces.
+              Hello! I am Anurag, a developer who loves to build clean, functional, and user-friendly digital experiences. 
+              I enjoy bringing ideas to life through the simple elegance of writing mercilessly efficient code, 
+              whether it be when developing user interfaces or working on the server-side.
             </p>
             <p className="text-gray-300 text-lg leading-relaxed">
-              Motivated by a love of learning, solving problems, and creating impactful, scalable technology. 
-              Eager to contribute to practical projects and grow within dynamic development teams.
+              Having studied computer science, partnered with my hands-on real-world experience in different projects, 
+              I am always excited to explore new tools, solve problems, and further develop my skills. 
+              I also enjoy problem-solving on LeetCode or exploring innovative technology trends in my spare time! 
+              I love building impactful solutions and growing with progressive teams.
             </p>
           </motion.div>
 
@@ -48,19 +51,20 @@ const AboutSection = () => {
               <CardContent className="space-y-4">
                 <div>
                   <h4 className="text-green-400 font-semibold">B.Tech in Computer Science and Engineering</h4>
-                  <p className="text-gray-300">Galgotias University (2022–Present)</p>
+                  <p className="text-gray-300"><a href="https://www.galgotiasuniversity.edu.in/" target="_blank">Galgotias University (2022–Present)</a></p>
+                  
                   <p className="text-gray-400">CGPA: 7.29</p>
                 </div>
                 <Separator className="bg-gray-700" />
                 <div>
                   <h4 className="text-green-400 font-semibold">Class 12</h4>
-                  <p className="text-gray-300">Nav Jeevan Mission School</p>
+                  <p className="text-gray-300"><a href="http://navjeevandeoria.in/BasicDetail.aspx"target=''>Nav Jeevan Mission School</a></p>
                   <p className="text-gray-400">70.2% (2020–2021)</p>
                 </div>
                 <Separator className="bg-gray-700" />
                 <div>
                   <h4 className="text-green-400 font-semibold">Class 10</h4>
-                  <p className="text-gray-300">Nav Jeevan Mission School</p>
+                  <p className="text-gray-300"><a href="http://navjeevandeoria.in/BasicDetail.aspx"target=''>Nav Jeevan Mission School</a></p>
                   <p className="text-gray-400">79% (2018–2019)</p>
                 </div>
               </CardContent>

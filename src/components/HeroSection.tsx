@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { motion } from "framer-motion";
-import { ChevronDown, Download, Play, Github, Linkedin, Mail, Code, ArrowRight, Sparkles } from "lucide-react";
+import { ChevronDown, Download, Play, Github, Linkedin, Mail, Code, ArrowRight, Sparkles, Target } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
@@ -77,13 +77,13 @@ const HeroSection = () => {
               
               {/* Profile Image */}
               <motion.div
-                initial={{ scale: 0.8, opacity: 0 }}
+                initial={{ scale: 0.8, opacity: 0}}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 1, delay: 0.3 }}
-                className="relative w-72 h-72 rounded-full overflow-hidden border-4 border-white/20 shadow-2xl"
+                className="relative w-80 h-75 rounded-full overflow-hidden border-4 border-white/25 shadow-2xl"
               >
                 <img
-                  src="https://postimage.me/image/ANURAG-GUPTA-B.TECH%28CSE%29-14.UdeIoQ"
+                  src="public/_DSF8625 (1).jpg"
                   alt="Anurag Gupta"
                   className="w-full h-full object-cover"
                 />
@@ -184,13 +184,19 @@ const HeroSection = () => {
               className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center mt-8"
             >
               <Button 
-                ref="/ANURAG GUPTA_RESUME With Photo.pdf"
                 size="lg"
                 className="group bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-black font-semibold px-8 py-4 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-green-500/25"
               >
+                <a
+                 href="/public/ANURAG GUPTA_RESUME With Photo.pdf"
+                           download
+                         target="_blank"
+                        rel="noopener noreferrer"
+                       >
                 <Download className="w-5 h-5 mr-2 group-hover:animate-bounce" />
                 Download CV
                 <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
+                </a>
               </Button>
               
               <Button 
@@ -219,7 +225,7 @@ const HeroSection = () => {
               className="flex justify-center lg:justify-start space-x-6 mt-8"
             >
               {[
-                { icon: Github, href: "https://github.com/anurag-gupta1708", label: "GitHub" },
+                { icon: Github,  href: "https://github.com/anurag-gupta1708", label: "GitHub" },
                 { icon: Linkedin, href: "https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile", label: "LinkedIn" },
                 { icon: Mail, href: "mailto:akg2571977@gmail.com", label: "Email" },
                 { icon: Code, href: "https://leetcode.com/u/a_2005/", label: "LeetCode" }

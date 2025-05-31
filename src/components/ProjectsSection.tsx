@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion } from "framer-motion";
 import { Github, ExternalLink } from "lucide-react";
@@ -13,14 +12,16 @@ const ProjectsSection = () => {
       description: "Designed an education-focused exam interface with modern UI/UX principles",
       tools: ["Figma"],
       type: "Design",
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop"
+      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop",
+      liveDemoUrl: "https://www.figma.com/design/aLeDXOgicVKf5VwFPSZCDR/eduexam?node-id=0-1"
     },
     {
       title: "Khatabook Clone",
       description: "Full-stack application featuring customer ledger, transaction history, filtering, and balance computation",
       tools: ["React.js", "Node.js"],
       type: "Development",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop"
+      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop",
+      liveDemoUrl: "#" // Replace with your actual demo URL
     }
   ];
 
@@ -54,11 +55,20 @@ const ProjectsSection = () => {
                     className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-4">
-                    <Button size="sm" variant="outline" className="border-white text-white hover:bg-white hover:text-black">
+                    <Button 
+                      size="sm" 
+                      variant="outline" 
+                      className="border-white text-white hover:bg-white hover:text-black"
+                      onClick={() => window.open("https://github.com/anurag-gupta1708", "_blank")}
+                    >
                       <Github className="w-4 h-4 mr-2" />
                       Code
                     </Button>
-                    <Button size="sm" className="bg-cyan-500 hover:bg-cyan-600">
+                    <Button 
+                      size="sm" 
+                      className="bg-cyan-500 hover:bg-cyan-600"
+                      onClick={() => window.open(project.liveDemoUrl, "_blank")}
+                    >
                       <ExternalLink className="w-4 h-4 mr-2" />
                       Live Demo
                     </Button>

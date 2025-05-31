@@ -29,7 +29,9 @@ const ExperienceSection = () => {
               <div className="flex justify-between items-start">
                 <div>
                   <CardTitle className="text-white text-xl">Web Development Intern</CardTitle>
-                  <p className="text-cyan-400 font-semibold">AICTE</p>
+                  <p className="text-cyan-400 font-semibold">
+                    <a href="public/Anurag_Kumar _Gupta _AICTE certificate.pdf"target="_blank">
+                    AICTE </a> </p>
                 </div>
                 <Badge className="bg-green-500/20 text-green-400 border-green-500/30">
                   Oct–Dec 2024
