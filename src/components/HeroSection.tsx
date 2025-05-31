@@ -84,7 +84,7 @@ const HeroSection = () => {
               >
                 <img
                   src="public/_DSF8625 (1).jpg"
-                  alt="Anurag Gupta"
+                  alt=""
                   className="w-full h-full object-cover"
                 />
                 
