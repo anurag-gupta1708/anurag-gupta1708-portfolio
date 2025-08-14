@@ -3,6 +3,7 @@ import React from 'react';
 import { motion } from "framer-motion";
 import { Download, Play, ArrowRight, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import TextType from '../TypeText';
 import SocialLinks from './SocialLinks';
 
 const HeroContent = () => {
@@ -50,7 +51,14 @@ const HeroContent = () => {
           className="space-y-2"
         >
           <h2 className="text-xl md:text-3xl lg:text-4xl font-light text-gray-300">
-            Full-Stack Developer
+            <TextType 
+  text={["Full-Stack Developer", "for your websites", "Happy coding!"]}
+  typingSpeed={75}
+  pauseDuration={1500}
+  showCursor={true}
+  cursorCharacter="|"
+/>
+            
           </h2>
           <div className="flex items-center justify-center lg:justify-start space-x-2 text-lg md:text-xl text-gray-400">
             <span>&</span>
