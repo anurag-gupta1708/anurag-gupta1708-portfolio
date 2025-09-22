@@ -1,73 +1,76 @@
-# Welcome to your Lovable project
+🌐 Anurag Gupta – Portfolio Website
 
-## Project info
+Welcome to my personal portfolio website! 🚀
+This project is a showcase of who I am, what I’ve built, and where I’m headed in my journey as a Computer Science Engineer. It serves as my digital identity – a place where you can explore my skills, projects, experience, and easily get in touch with me.
 
-**URL**: https://lovable.dev/projects/71b18458-cc1b-4831-8bfb-2153211adbb2
+🔗 Live Website demo: https://anurag-gupta-dev.vercel.app/
 
-## How can I edit this code?
+✨ Features
 
-There are several ways of editing your application.
+📄 About Me – A quick snapshot of my background and aspirations.
 
-**Use Lovable**
+💼 Experience & Projects – Highlights of what I’ve worked on, with interactive sections.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/71b18458-cc1b-4831-8bfb-2153211adbb2) and start prompting.
+📊 Charts & Visuals – Data and achievements presented in a visually appealing way.
 
-Changes made via Lovable will be committed automatically to this repo.
+🎨 Modern UI/UX – Built with TailwindCSS, shadcn/ui, and Radix UI for a clean and minimal design.
 
-**Use your preferred IDE**
+⚡ Smooth Animations – Framer Motion & GSAP power delightful transitions.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+📱 Fully Responsive – Optimized for mobile, tablet, and desktop.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+📬 Contact Form – Send me a message directly via EmailJS.
 
-Follow these steps:
+🛠️ Tech Stack
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Frontend Framework: React + TypeScript
+Build Tool
+Styling
+Animations
+3D & Graphics
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
 
-# Step 3: Install the necessary dependencies.
-npm i
+Other Tools: React Query, Recharts, EmailJS
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+⚙️ Getting Started
+
+If you’d like to run this project locally:
+
+# Clone the repo
+git clone https://github.com/your-username/anurag-gupta1708-portfolio.git
+
+# Navigate to project folder
+cd anurag-gupta1708-portfolio-main
+
+# Install dependencies
+npm install
+
+# Run locally
 npm run dev
-```
 
-**Edit a file directly in GitHub**
+🚀 Deployment
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+This portfolio is hosted on Vercel for fast, reliable, and free hosting.
+You can deploy your own fork by:
 
-**Use GitHub Codespaces**
+Pushing your repo to GitHub.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Linking it to Vercel.
 
-## What technologies are used for this project?
+Deploying with a single click.
 
-This project is built with:
+📌 Future Improvements
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Add a blog section to share my learnings.
 
-## How can I deploy this project?
+Include a dark/light mode toggle.
 
-Simply open [Lovable](https://lovable.dev/projects/71b18458-cc1b-4831-8bfb-2153211adbb2) and click on Share -> Publish.
+Expand the projects section with live demos and GitHub links.
 
-## Can I connect a custom domain to my Lovable project?
+📬 Contact
 
-Yes, you can!
+If you’d like to connect, feel free to reach out!
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Email: guptaanurag1708@gmail.com
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+LinkedIn: www.linkedin.com/in/anurag-gupta1708
