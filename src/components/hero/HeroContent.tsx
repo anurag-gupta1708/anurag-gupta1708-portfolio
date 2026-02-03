@@ -107,7 +107,7 @@ const HeroContent = () => {
     className="group bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-black font-semibold px-8 py-4 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-green-500/25"
   >
     <a
-     href="/public/uploads/ANURAG KUMAR GUPTA_Resume.pdf"
+     href="/uploads/ANURAG KUMAR GUPTA_Resume.pdf"
                download
              target="_blank"
             rel="noopener noreferrer"

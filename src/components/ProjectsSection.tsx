@@ -12,7 +12,7 @@ const ProjectsSection = () => {
   description: "AI-powered travel itinerary generator with ticket parsing, preference filters, and smart recommendations. Public safety dashboard integrating real-time data for informed travel decisions.",
   tools: [" React, Tailwind CSS, Node.js MongoDB, OpenAI APIs "],
       type: "Development",
-      image: "public/Screenshot (1).png",
+      image: "uploads/Screenshot (1).png",
       liveDemoUrl: "https://ai-powered-tourist-journey-planning-and-public-safety-dashboard.vercel.app/" // Replace with your actual demo URL
     },
     {
@@ -20,7 +20,7 @@ const ProjectsSection = () => {
       description: " Real-time 1v1 voting system with live analytics and secure Gmail-based vote restriction. Full-stack build using Node.js, MongoDB & Tailwind, deployed on Vercel for scalable performance.",
       tools: ["React, Tailwind CSS, Node.js, MongoDB"],
       type: "Solo Developer ",
-      image: "public/uploads/Screenshot (17).png",
+      image: "uploads/Screenshot (17).png",
       liveDemoUrl: "https://bgmi-1v1.vercel.app/" // Replace with your actual demo URL
     }
   ];

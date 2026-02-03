@@ -9,7 +9,7 @@ const ExperienceSection = () => {
     {
       role: "Web Full Stack Development Virtual Intern",
       company: "AICTE",
-      certificate: "public/Anurag Kumar  Gupta_AICTE_certificate.pdf",
+      certificate: "uploads/Anurag Kumar  Gupta_AICTE_certificate.pdf",
       duration: "Oct – Dec 2024",
       points: [
         "Participated in a virtual internship focused on full stack web development",
@@ -21,7 +21,7 @@ const ExperienceSection = () => {
     {
       role: "Java Developer Trainee",
       company: "WIPRO",
-      certificate: "public/J_250540604_Anurag Kumar Gupta.pdf",
+      certificate: "uploads/J_250540604_Anurag Kumar Gupta.pdf",
       duration: "2025",
       points: [
         "Developed Java-based applications using object-oriented programming principles",

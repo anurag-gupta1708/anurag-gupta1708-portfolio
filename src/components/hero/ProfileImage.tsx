@@ -30,7 +30,7 @@ const ProfileImage = () => {
           className="relative w-80 h-80 rounded-full overflow-hidden border-4 border-white/25 shadow-2xl"
         >
           <img
-            src="public/photo.jpeg"
+            src="/uploads/Photo.jpeg"
             className="w-full h-full object-cover"
           />
           
