@@ -26,15 +26,14 @@ const AboutSection = () => {
             className="space-y-6"
           >
             <p className="text-gray-300 text-lg leading-relaxed">
-              Hello! I am Anurag, a developer who loves to build clean, functional, and user-friendly digital experiences. 
-              I enjoy bringing ideas to life through the simple elegance of writing mercilessly efficient code, 
-              whether it be when developing user interfaces or working on the server-side.
+            Hello! I’m <span className="text-rose-400 font-semibold">Anurag</span>, a passionate developer who loves building clean, functional, and user-friendly digital experiences. 
+            I enjoy bringing ideas to life through efficient and elegant code, whether 
+            I’m developing intuitive user interfaces or working on robust server-side solutions.
             </p>
             <p className="text-gray-300 text-lg leading-relaxed">
-              Having studied computer science, partnered with my hands-on real-world experience in different projects, 
-              I am always excited to explore new tools, solve problems, and further develop my skills. 
-              I also enjoy problem-solving on LeetCode or exploring innovative technology trends in my spare time! 
-              I love building impactful solutions and growing with progressive teams.
+              With a strong foundation in computer science and hands-on experience across multiple real-world projects, I am always eager to explore new technologies, solve challenging problems, 
+              and continuously improve my skill set. In my free time, I enjoy practicing problem-solving on platforms like LeetCode and staying updated with the latest technology trends.
+               I am driven to create impactful solutions and grow alongside innovative and forward-thinking teams.
             </p>
           </motion.div>
 
@@ -51,22 +50,22 @@ const AboutSection = () => {
               <CardContent className="space-y-4">
                 <div>
                   <h4 className="text-green-400 font-semibold">B.Tech in Computer Science and Engineering</h4>
-                  <p className="text-gray-300"><a href="https://www.galgotiasuniversity.edu.in/" target="_blank">Galgotias University (2022–Present)</a></p>
+                  <p className="text-gray-300"><a href="https://www.galgotiasuniversity.edu.in/" target="_blank">Galgotias University (2022–2026)</a></p>
                   
-                  <p className="text-gray-400">CGPA: 7.29</p>
+                  {/* <p className="text-gray-400">CGPA: 7.52</p> */}
                 </div>
                 <Separator className="bg-gray-700" />
                 <div>
-                  <h4 className="text-green-400 font-semibold">Class 12</h4>
+                  <h4 className="text-green-400 font-semibold">Senior Secondary </h4>
                   <p className="text-gray-300"><a href="http://navjeevandeoria.in/BasicDetail.aspx"target=''>Nav Jeevan Mission School</a></p>
-                  <p className="text-gray-400">70.2% (2020–2021)</p>
+                  {/* <p className="text-gray-400">70.2% (2020–2021)</p> */}
                 </div>
-                <Separator className="bg-gray-700" />
+                {/* <Separator className="bg-gray-700" />
                 <div>
                   <h4 className="text-green-400 font-semibold">Class 10</h4>
                   <p className="text-gray-300"><a href="http://navjeevandeoria.in/BasicDetail.aspx"target=''>Nav Jeevan Mission School</a></p>
                   <p className="text-gray-400">79% (2018–2019)</p>
-                </div>
+                </div> */}
               </CardContent>
             </Card>
           </motion.div>

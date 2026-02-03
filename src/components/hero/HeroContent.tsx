@@ -1,14 +1,30 @@
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from "framer-motion";
 import { Download, Play, ArrowRight, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import TextType from '../TypeText';
 import SocialLinks from './SocialLinks';
 
+
+
+
+
 const HeroContent = () => {
+  const [showVideo, setShowVideo] = useState(false);
+
+  useEffect(() => {
+    const handleEsc = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setShowVideo(false);
+    };
+
+    window.addEventListener("keydown", handleEsc);
+    return () => window.removeEventListener("keydown", handleEsc);
+  }, []);
+
   return (
     <motion.div
+    id="hero"
       initial={{ opacity: 0, x: 50 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
@@ -40,7 +56,7 @@ const HeroContent = () => {
         >
           <span className="text-white block mb-2">Hi, I'm</span>
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 block">
-            Anurag Gupta
+            Anurag Kumar Gupta
           </span>
         </motion.h1>
         
@@ -52,17 +68,17 @@ const HeroContent = () => {
         >
           <h2 className="text-xl md:text-3xl lg:text-4xl font-light text-gray-300">
             <TextType 
-  text={["Full-Stack Developer", "for your websites", "Happy coding!"]}
+  text={["Code...", "Create...", "Innovate"]}
   typingSpeed={75}
   pauseDuration={1500}
-  showCursor={true}
-  cursorCharacter="|"
+  showCursor={false}
+  cursorCharacter="/"
 />
             
           </h2>
           <div className="flex items-center justify-center lg:justify-start space-x-2 text-lg md:text-xl text-gray-400">
-            <span>&</span>
-            <span className="italic font-light">Problem Solver</span>
+            <span></span>
+            <span className="italic font-light">"Aspiring Full Stack Developer"</span>
           </div>
         </motion.div>
       </div>
@@ -84,31 +100,31 @@ const HeroContent = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 1.2 }}
-        className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center mt-8"
+        className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-self-auto items-center mt-8"
       >
-        <Button 
-          size="lg"
-          className="group bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-black font-semibold px-8 py-4 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-green-500/25"
-        >
-          <a
-           href="/public/ANURAG GUPTA_RESUME With Photo.pdf"
-                     download
-                   target="_blank"
-                  rel="noopener noreferrer"
-                 >
-          <Download className="w-5 h-5 mr-2 group-hover:animate-bounce" />
-          Download CV
-          <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
-          </a>
-        </Button>
-        
-        <Button 
+  <Button 
+    size="lg"
+    className="group bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-black font-semibold px-8 py-4 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-green-500/25"
+  >
+    <a
+     href="/public/uploads/ANURAG KUMAR GUPTA_Resume.pdf"
+               download
+             target="_blank"
+            rel="noopener noreferrer"
+           >
+    <Download className="w-5 h-5 mr-2 group-hover:animate-bounce" />
+    Download CV
+    <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
+    </a>
+  </Button>
+  {/* <Button 
           variant="outline" 
           size="lg"
           className="group border-2 border-gray-600 text-white hover:bg-white hover:text-black px-8 py-4 rounded-xl transition-all duration-300 transform hover:scale-105 backdrop-blur-sm"
+          onClick={() => setShowVideo(true)}
         >
           <Play className="w-5 h-5 mr-2" />
-          Watch Demo
+          Intro Video
           <motion.div
             animate={{ x: [0, 5, 0] }}
             transition={{ duration: 1.5, repeat: Infinity }}
@@ -117,6 +133,43 @@ const HeroContent = () => {
             ▶
           </motion.div>
         </Button>
+{showVideo && (
+  <div
+    className="fixed inset-0 bg-black/70 flex items-center justify-center z-50"
+    onClick={() => setShowVideo(false)} // Click outside closes
+  >
+
+    <motion.div
+      initial={{ scale: 0.8, opacity: 0 }}
+      animate={{ scale: 1, opacity: 1 }}
+      transition={{ duration: 0.3 }}
+      onClick={(e) => e.stopPropagation()} // Prevent background close
+      className="relative bg-black p-4 rounded-xl w-[90%] max-w-2xl"
+    >
+
+      {/* Close Button */}
+      {/* <button
+        onClick={() => setShowVideo(false)}
+        className="absolute -top-3 -right-3 bg-white text-black w-8 h-8 rounded-full font-bold shadow-lg hover:scale-110 transition"
+      >
+        ✕
+      </button> */}
+
+      {/* Video */}
+      {/* <video
+        src="/uploads/3D Intro.mp4"
+        controls
+        autoPlay
+        className="w-full rounded-lg"
+      />
+
+    </motion.div>
+
+  </div>
+)} */} 
+
+
+
       </motion.div>
       
       {/* Social Links */}

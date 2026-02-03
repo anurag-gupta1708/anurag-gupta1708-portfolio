@@ -6,9 +6,9 @@ import { Github, Linkedin, Mail, Code } from "lucide-react";
 const SocialLinks = () => {
   const socialLinks = [
     { icon: Github,  href: "https://github.com/anurag-gupta1708", label: "GitHub" },
-    { icon: Linkedin, href: "https://linkedin.com/in/anurag-gupta-378819274", label: "LinkedIn" },
-    { icon: Mail, href: "mailto:akg2571977@gmail.com", label: "Email" },
-    { icon: Code, href: "https://leetcode.com/u/a_2005/", label: "LeetCode" }
+    { icon: Linkedin, href: "https://linkedin.com/in/anurag-gupta1708", label: "LinkedIn" },
+    { icon: Mail, href: "mailto:guptaanurag1708@gmail.com", label: "Email" },
+    // { icon: Code, href: "https://leetcode.com/u/a_2005/", label: "LeetCode" }
   ];
 
   return (
@@ -16,7 +16,7 @@ const SocialLinks = () => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, delay: 1.4 }}
-      className="flex justify-center lg:justify-start space-x-6 mt-8"
+      className="flex justify-center lg:justify-self-auto space-x-6 mt-8"
     >
       {socialLinks.map(({ icon: Icon, href, label }) => (
         <motion.a

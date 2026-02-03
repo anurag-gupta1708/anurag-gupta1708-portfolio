@@ -6,19 +6,19 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 const ServicesSection = () => {
   const services = [
     {
-      title: "UI/UX Design",
-      description: "Wireframes and prototypes in Figma with user-centered design principles",
-      icon: "🎨"
+      title: "Full-Stack Web Development",
+      description: "Building complete web applications using modern frontend frameworks and robust backend systems with secure APIs and database integration.",
+      icon: "🌐"
     },
     {
-      title: "Full-Stack Development",
-      description: "From frontend UIs to backend logic and database management",
-      icon: "💻"
+      title: "Backend & API Development",
+      description: "Designing scalable REST APIs, authentication systems, server-side logic, and efficient data handling using Node.js and Java-based backends.",
+      icon: "⚙️"
     },
     {
-      title: "Custom Web Applications",
-      description: "Tailored to client requirements with responsive design and functionality",
-      icon: "🚀"
+      title: "Java Application Development",
+      description: "Developing reliable and high-performance Java applications with strong object-oriented design, backend logic, and enterprise-ready architecture.",
+      icon: "☕"
     }
   ];
 

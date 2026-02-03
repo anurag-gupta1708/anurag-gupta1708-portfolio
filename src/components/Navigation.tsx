@@ -15,6 +15,10 @@ const Navigation = ({ darkMode, setDarkMode }: NavigationProps) => {
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
+            whileHover={{scale:1.1}}
+            onClick={()=>{
+              document.getElementById("hero")?.scrollIntoView({behavior:"smooth"});
+            }}
             className="text-xl font-bold text-white"
           >
             AG
@@ -30,12 +34,12 @@ const Navigation = ({ darkMode, setDarkMode }: NavigationProps) => {
               </a>
             ))}
           </div>
-          <button
+          {/* <button
             onClick={() => setDarkMode(!darkMode)}
             className="p-2 rounded-lg bg-gray-800 text-white hover:bg-gray-700 transition-colors"
           >
             {darkMode ? '🌙' : '☀️'}
-          </button>
+          </button> */}
         </div>
       </div>
     </nav>

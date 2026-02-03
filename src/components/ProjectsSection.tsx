@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from "framer-motion";
+import { motion, time } from "framer-motion";
 import { Github, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -7,21 +7,21 @@ import { Badge } from "@/components/ui/badge";
 
 const ProjectsSection = () => {
   const projects = [
-    {
-      title: "EduExam",
-      description: "Designed an education-focused exam interface with modern UI/UX principles",
-      tools: ["Figma"],
-      type: "Design",
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop",
-      liveDemoUrl: "https://www.figma.com/design/aLeDXOgicVKf5VwFPSZCDR/eduexam?node-id=0-1"
+{
+  title: "AI-Powered Tourist Journey Planning & Public-Safety Dashboard",
+  description: "AI-powered travel itinerary generator with ticket parsing, preference filters, and smart recommendations. Public safety dashboard integrating real-time data for informed travel decisions.",
+  tools: [" React, Tailwind CSS, Node.js MongoDB, OpenAI APIs "],
+      type: "Development",
+      image: "public/Screenshot (1).png",
+      liveDemoUrl: "https://ai-powered-tourist-journey-planning-and-public-safety-dashboard.vercel.app/" // Replace with your actual demo URL
     },
     {
-      title: "Khatabook Clone",
-      description: "Full-stack application featuring customer ledger, transaction history, filtering, and balance computation",
-      tools: ["React.js", "Node.js"],
-      type: "Development",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop",
-      liveDemoUrl: "#" // Replace with your actual demo URL
+      title: "BGMI-1v1 Voting Platform",
+      description: " Real-time 1v1 voting system with live analytics and secure Gmail-based vote restriction. Full-stack build using Node.js, MongoDB & Tailwind, deployed on Vercel for scalable performance.",
+      tools: ["React, Tailwind CSS, Node.js, MongoDB"],
+      type: "Solo Developer ",
+      image: "public/uploads/Screenshot (17).png",
+      liveDemoUrl: "https://bgmi-1v1.vercel.app/" // Replace with your actual demo URL
     }
   ];
 
@@ -59,10 +59,10 @@ const ProjectsSection = () => {
                       size="sm" 
                       variant="outline" 
                       className="border-white text-white hover:bg-white hover:text-black"
-                      onClick={() => window.open("https://github.com/anurag-gupta1708", "_blank")}
+                      onClick={() => window.open("https://github.com/anurag-gupta1708?tab=repositories", "_blank")}
                     >
                       <Github className="w-4 h-4 mr-2" />
-                      Code
+                      GitHub
                     </Button>
                     <Button 
                       size="sm" 

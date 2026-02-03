@@ -11,11 +11,11 @@ const SkillsSection = () => {
     { name: "Node.js", category: "Backend" },
     { name: "MySQL", category: "Database" },
     { name: "Java", category: "Language" },
-    { name: "VS Code", category: "Tools" },
-    { name: "GitHub", category: "Tools" },
-    { name: "IntelliJ IDEA", category: "Tools" },
-    { name: "Figma", category: "Tools" },
-    { name: "AWS", category: "Tools" }
+    { name: "VS Code", category: "Tools and Platforms" },
+    { name: "GitHub", category: "Tools and Platforms" },
+    { name: "IntelliJ IDEA", category: "Tools and Platforms" },
+    { name: "Figma", category: "Tools and Platforms" },
+    { name: "AWS", category: "Cloud" }
   ];
 
   return (
@@ -46,7 +46,8 @@ const SkillsSection = () => {
                 {skill.category === 'Backend' && '⚙️'}
                 {skill.category === 'Database' && '🗄️'}
                 {skill.category === 'Language' && '💻'}
-                {skill.category === 'Tools' && '🛠️'}
+                {skill.category === 'Tools and Platforms' && '🛠️'}
+                {skill.category === 'Cloud' && '☁️'}
               </div>
               <h3 className="text-white font-semibold">{skill.name}</h3>
               <p className="text-gray-400 text-sm">{skill.category}</p>

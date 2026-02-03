@@ -30,8 +30,7 @@ const ProfileImage = () => {
           className="relative w-80 h-80 rounded-full overflow-hidden border-4 border-white/25 shadow-2xl"
         >
           <img
-            src="/lovable-uploads/2fe69ebc-bcd3-4c0d-acc6-5ce738339a18.png"
-            alt="Anurag Gupta"
+            src="public/photo.jpeg"
             className="w-full h-full object-cover"
           />
           

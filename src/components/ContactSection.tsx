@@ -44,7 +44,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <p className="text-gray-400">Email</p>
-                  <p className="text-white">akg2571977@gmail.com</p>
+                  <p className="text-white">guptaanurag1708@gmail.com</p>
                 </div>
               </div>
               
@@ -54,19 +54,19 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <p className="text-gray-400">LinkedIn</p>
-                  <p className="text-white">linkedin.com/in/anurag-gupta-378819274</p>
+                  <p className="text-white">linkedin.com/in/anurag-gupta1708</p>
                 </div>
               </div>
               
-              <div className="flex items-center space-x-4">
+              {/* <div className="flex items-center space-x-4">
                 <div className="w-12 h-12 bg-cyan-500/20 rounded-lg flex items-center justify-center">
                   <Code className="w-6 h-6 text-cyan-400" />
-                </div>
-                <div>
+                </div> */}
+                {/* <div>
                   <p className="text-gray-400">LeetCode</p>
                   <p className="text-white">leetcode.com/u/a_2005</p>
-                </div>
-              </div>
+                </div> */}
+              {/* </div> */}
             </div>
           </motion.div>
 
